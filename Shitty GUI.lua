@@ -450,7 +450,7 @@ for _,v in pairs(game.CoreGui:GetDescendants()) do
 if v.Name == "FinityUI" then
 game.CoreGui.FinityUI:Destroy()
 wait(1.35)
-loadstring(game:HttpGet("https://pastebin.com/raw/kiCDzg2H"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HDTerebi/DSRPG2/master/Shitty%20GUI.lua"))()
 end
 end
 end)
