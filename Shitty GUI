@@ -1,3 +1,6 @@
+--Script GUi Made And Compiled By Terebi#0001
+--Please Do Not Take Credit For It
+
 local speed = 550
 local Mouse = game.Players.LocalPlayer:GetMouse()
 
@@ -435,6 +438,8 @@ MiscSettings:Cheat("Button", "Purchase Apple $8", function()
 for i,v in pairs(game.Workspace:GetDescendants()) do
 if v:FindFirstChild("Apple $8") then
 fireclickdetector(v:FindFirstChild("ClickDetector"))
+end
+end
 end)
 
 MiscSettings:Cheat("Button", "Purchase Meat $28", function()
