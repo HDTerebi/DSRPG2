@@ -45,6 +45,7 @@ local UpdateLogSettings3 = UpdateLogCategory:Sector("Update Logs")
 local UpdateLogSettings4 = UpdateLogCategory:Sector("Update Logs")
 local UpdateLogSettings5 = UpdateLogCategory:Sector("Update Logs")
 local UpdateLogSettings6 = UpdateLogCategory:Sector("Update Logs")
+local UpdateLogSettings7 = UpdateLogCategory:Sector("Update Logs")
 local ReExecuteSettings = ReExecuteCategory:Sector("ReExecute")
 
 CreditsMaker:Cheat("Label", "Terebi @ v3rmillion.net")
@@ -67,6 +68,8 @@ UpdateLogSettings5:Cheat("Label", "Updated 8/6/2020 @ 3:44AM")
 UpdateLogSettings5:Cheat("Label", "Nichirin Sword Attack Spam & No Fog")
 UpdateLogSettings6:Cheat("Label", "Updated 8/8/2020 @ 2:35PM")
 UpdateLogSettings6:Cheat("Label", "Added Food Purchase 2 Misc & ReExecute Section")
+UpdateLogSettings7:Cheat("Label", "Updated 8/8/2020 @ 9:58PM")
+UpdateLogSettings7:Cheat("Label", "Link Changed From Pastebin 2 Github")
 
 FarmingSettings:Cheat(
 	"Checkbox", -- Type
@@ -434,12 +437,8 @@ game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
 	end
 )
 
-MiscSettings:Cheat("Button", "Purchase Apple $8", function()
-for i,v in pairs(game.Workspace:GetDescendants()) do
-if v:FindFirstChild("Apple $8") then
-fireclickdetector(v:FindFirstChild("ClickDetector"))
-end
-end
+MiscSettings:Cheat("Button", "Purchase Apple $4", function()
+fireclickdetector(game.Workspace.NPC["Demons cannot buy this!"]["Apple $4"]:FindFirstChild("ClickDetector"))
 end)
 
 MiscSettings:Cheat("Button", "Purchase Meat $28", function()
