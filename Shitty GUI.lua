@@ -1,6 +1,3 @@
---Script GUi Made And Compiled By Terebi#0001
---Please Do Not Take Credit For It
-
 local speed = 550
 local Mouse = game.Players.LocalPlayer:GetMouse()
 
