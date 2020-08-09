@@ -1,4 +1,4 @@
-local speed = 550
+local speed = 560
 local Mouse = game.Players.LocalPlayer:GetMouse()
 
 local Katana = "Katana"
@@ -451,6 +451,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/HDTerebi/DSRPG2/maste
 end
 end
 end)
+
+MiscSettings:Cheat("Dropdown", "Gender Wanted:", function(Option)
+game.ReplicatedStorage.All.Events.System:FireServer("GenderDecide", Option)
+end, {
+	options = {
+		"Male",
+		"Female"
+	}
+})
 	
 loadstring(game:HttpGet("https://raw.githubusercontent.com/chimnguu/ngu/master/dsrpg2.lua"))()
 
