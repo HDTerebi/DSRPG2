@@ -1,4 +1,4 @@
-local speed = 300
+local speed = 7
 local Mouse = game.Players.LocalPlayer:GetMouse()
 
 local Katana = "Katana"
@@ -7,7 +7,7 @@ local Plr = game:GetService("Players").LocalPlayer
 local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:wait()
 local hm = char:FindFirstChild("HumanoidRootPart")
 local dist = (hm.Position).magnitude
-local tweenspeed = dist/speed
+local tweenspeed = speed
 local Noclipping = nil
 Clip = false
 
