@@ -1,4 +1,4 @@
-local speed = 560
+local speed = 300
 local Mouse = game.Players.LocalPlayer:GetMouse()
 
 local Katana = "Katana"
@@ -420,6 +420,21 @@ end
 end
    end
 end
+)
+
+MiscSettings:Cheat(
+	"Checkbox", -- Type
+	"No Starve Enabled", -- Name
+	function(Starve) -- Callback function
+		Spam10 = Starve
+		while Spam10 do wait()
+		for _,v in pairs(game.Players.LocalPlayer.PlayerGui.HUDGui:GetChildren()) do
+		if v.Name == "HungerScript" then
+        game.Players.LocalPlayer.PlayerGui.HUDGui.HungerScript:Destroy()
+		end
+		end
+		end
+		end
 )
 
 MiscSettings:Cheat(
