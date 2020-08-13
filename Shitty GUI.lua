@@ -475,6 +475,8 @@ MiscSettings:Cheat("Textbox", "Run Speed:", function(Value8)
 for _,v in pairs(game.Workspace.Live[game.Players.LocalPlayer.Name]:GetDescendants()) do
 		if v.Name == "Speed" then
 		game.Workspace.Live[game.Players.LocalPlayer.Name].Buffs.Speed.Value = Value8
+		end
+		end
 end, {
 	placeholder = "10"
 	})
