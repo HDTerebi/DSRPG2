@@ -45,9 +45,8 @@ CreditsCreator:Cheat("Label", "detourious @ v3rmillion.net")
 CreditsCreator:Cheat("Label", "deto#7612 @ discord.gg")
 CreditsMaker2:Cheat("Label", "Chim#2575 @ discord.gg - Auto Farm Mob Maker")
 CreditsMaker3:Cheat("Label", "https://discord.gg/npFg3k4 - Shitty DSRPG 2 GUI Server")
-VersionSettings:Cheat("Label", "v0.02")
-VersionSettings:Cheat("Label", "Never Starve 4 Demon Slayers (TESTING)")
-VersionSettings:Cheat("Label", "Infinite 2x EXP (TESTING)")
+VersionSettings:Cheat("Label", "v0.03")
+VersionSettings:Cheat("Label", "Run Speed Modifier")
 
 FarmingSettings:Cheat(
 	"Checkbox", -- Type
@@ -471,6 +470,14 @@ end, {
 		"Female"
 	}
 })
+
+MiscSettings:Cheat("Textbox", "Run Speed:", function(Value8)
+for _,v in pairs(game.Workspace.Live[game.Players.LocalPlayer.Name]:GetDescendants()) do
+		if v.Name == "Speed" then
+		game.Workspace.Live[game.Players.LocalPlayer.Name].Buffs.Speed.Value = Value8
+end, {
+	placeholder = "10"
+	})
 	
 loadstring(game:HttpGet("https://raw.githubusercontent.com/chimnguu/ngu/master/dsrpg2.lua"))()
 
