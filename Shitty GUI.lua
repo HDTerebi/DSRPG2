@@ -45,8 +45,9 @@ CreditsCreator:Cheat("Label", "detourious @ v3rmillion.net")
 CreditsCreator:Cheat("Label", "deto#7612 @ discord.gg")
 CreditsMaker2:Cheat("Label", "Chim#2575 @ discord.gg - Auto Farm Mob Maker")
 CreditsMaker3:Cheat("Label", "https://discord.gg/npFg3k4 - Shitty DSRPG 2 GUI Server")
-VersionSettings:Cheat("Label", "v0.01")
+VersionSettings:Cheat("Label", "v0.02")
 VersionSettings:Cheat("Label", "Never Starve 4 Demon Slayers (TESTING)")
+VersionSettings:Cheat("Label", "Infinite 2x EXP (TESTING)")
 
 FarmingSettings:Cheat(
 	"Checkbox", -- Type
@@ -411,6 +412,21 @@ MiscSettings:Cheat(
 		for _,v in pairs(game.Players.LocalPlayer.PlayerGui.HUDGui:GetChildren()) do
 		if v.Name == "HungerScript" then
         game.Players.LocalPlayer.PlayerGui.HUDGui.HungerScript:Destroy()
+		end
+		end
+		end
+		end
+)
+
+MiscSettings:Cheat(
+	"Checkbox", -- Type
+	"Infinite 2x EXP Enabled", -- Name
+	function(InfEXP) -- Callback function
+		Spam11 = InfEXP
+		while Spam11 do wait()
+		for _,v in pairs(game.Players.LocalPlayer.PlayerGui.HUDGui:GetChildren()) do
+		if v.Name == "LocalScript" then
+        game.Players.LocalPlayer.PlayerGui.HUDGui.LocalScript.Disabled = true
 		end
 		end
 		end
