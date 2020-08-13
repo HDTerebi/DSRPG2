@@ -36,7 +36,7 @@ local CreditsCreator = CreditsCategory:Sector("Finity Library Creator")
 local CreditsMaker = CreditsCategory:Sector("Scripts Creator")
 local CreditsMaker2 = CreditsCategory:Sector("Credits")
 local CreditsMaker3 = CreditsCategory:Sector("Discord Server")
-local VersionSettings = UpdateLogCategory:Sector("Version + Most Recent Feature")
+local VersionSettings = UpdateLogCategory:Sector("Version + Most Recent Feature(s)")
 local ReExecuteSettings = ReExecuteCategory:Sector("ReExecute")
 
 CreditsMaker:Cheat("Label", "Terebi @ v3rmillion.net")
