@@ -490,6 +490,7 @@ Icon = "rbxassetid://5472203252";
 Duration = 6;
 })
 
+game.Lighting.FogEnd = 1000000
 for i,v in pairs(game.Lighting:GetDescendants()) do
 	v:Destroy()
 	end
