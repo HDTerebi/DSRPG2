@@ -1,3 +1,15 @@
+if not game:IsLoaded() then
+	local Loading = Instance.new("Message",workspace)
+	Loading.Text = 'Waiting For The Game To Load....'
+	game.Loaded:Wait()
+	Loading:Destroy()
+end
+local VirtualUser=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+VirtualUser:CaptureController()
+VirtualUser:ClickButton2(Vector2.new())
+end)
+
 local speed = 7
 local Mouse = game.Players.LocalPlayer:GetMouse()
 
@@ -45,8 +57,8 @@ CreditsCreator:Cheat("Label", "detourious @ v3rmillion.net")
 CreditsCreator:Cheat("Label", "deto#7612 @ discord.gg")
 CreditsMaker2:Cheat("Label", "Chim#2575 @ discord.gg - Auto Farm Mob Maker")
 CreditsMaker3:Cheat("Label", "https://discord.gg/npFg3k4 - Shitty DSRPG 2 GUI Server")
-VersionSettings:Cheat("Label", "v0.03")
-VersionSettings:Cheat("Label", "Run Speed Modifier")
+VersionSettings:Cheat("Label", "v0.04")
+VersionSettings:Cheat("Label", "Automatic No Fog")
 
 FarmingSettings:Cheat(
 	"Checkbox", -- Type
@@ -432,18 +444,6 @@ MiscSettings:Cheat(
 		end
 )
 
-MiscSettings:Cheat(
-	"Checkbox", -- Type
-	"No Fog Enabled", -- Name
-	function(NoFog) -- Callback function
-		Spam9 = NoFog
-	game:GetService("Lighting").Brightness = 2
-game:GetService("Lighting").FogEnd = 100000
-game:GetService("Lighting").GlobalShadows = false
-game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
-	end
-)
-
 MiscSettings:Cheat("Button", "Purchase Apple $4", function()
 fireclickdetector(game.Workspace.NPC["Demons cannot buy this!"]["Apple $4"]:FindFirstChild("ClickDetector"))
 end)
@@ -489,3 +489,7 @@ Text = "Made By Terebi#0001",
 Icon = "rbxassetid://5472203252";
 Duration = 6;
 })
+
+for i,v in pairs(game.Lighting:GetDescendants()) do
+	v:Destroy()
+	end
