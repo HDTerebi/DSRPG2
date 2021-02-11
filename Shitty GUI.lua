@@ -57,8 +57,8 @@ CreditsCreator:Cheat("Label", "detourious @ v3rmillion.net")
 CreditsCreator:Cheat("Label", "deto#7612 @ discord.gg")
 CreditsMaker2:Cheat("Label", "Chim#2575 @ discord.gg - Auto Farm Mob Maker")
 CreditsMaker3:Cheat("Label", "https://discord.gg/npFg3k4 - Shitty DSRPG 2 GUI Server")
-VersionSettings:Cheat("Label", "v0.04")
-VersionSettings:Cheat("Label", "Automatic No Fog")
+VersionSettings:Cheat("Label", "v0.06")
+VersionSettings:Cheat("Label", "Added Flower Thing & Fixed Noclip")
 
 FarmingSettings:Cheat(
 	"Checkbox", -- Type
@@ -120,10 +120,10 @@ QuestsSettings:Cheat("Textbox", "Quest Target NPC TP", function(Value)
 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new((tweenspeed), Enum.EasingStyle.Linear)
 
 	    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(game.Workspace.NPC.Targets[Value]:FindFirstChild("HumanoidRootPart").Position)})
-	    game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 		tween:Play()
 		local function NoclipLoop()
         if Clip == false and Plr.Character ~= nil then
+		game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 for _, child in pairs(Plr.Character:GetDescendants()) do
     if child:IsA("BasePart") and child.CanCollide == true then
 	   				child.CanCollide = false
@@ -145,10 +145,10 @@ QuestsSettings:Cheat("Textbox", "Quest NPC TP", function(Value2)
 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new((tweenspeed), Enum.EasingStyle.Linear)
 
 	    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(game.Workspace.NPC.Quests[Value2]:FindFirstChild("HumanoidRootPart").Position)})
-	    game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 		tween:Play()
 		local function NoclipLoop()
         if Clip == false and Plr.Character ~= nil then
+		game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 for _, child in pairs(Plr.Character:GetDescendants()) do
     if child:IsA("BasePart") and child.CanCollide == true then
 	   				child.CanCollide = false
@@ -176,10 +176,10 @@ QuestsSettings:Cheat("Textbox", "Area TP", function(Value3)
 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new((tweenspeed), Enum.EasingStyle.Linear)
 
 	    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(game.Workspace.AreaPlaces[Value3].Position)})
-	    game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 		tween:Play()
 		local function NoclipLoop()
         if Clip == false and Plr.Character ~= nil then
+		game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 for _, child in pairs(Plr.Character:GetDescendants()) do
     if child:IsA("BasePart") and child.CanCollide == true then
 	   				child.CanCollide = false
@@ -219,10 +219,10 @@ TeacherSettings:Cheat("Textbox", "Teacher NPC TP", function(Value4)
 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new((tweenspeed), Enum.EasingStyle.Linear)
 
 	    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(game.Workspace.NPC.Teacher[Value4]:FindFirstChild("HumanoidRootPart").Position)})
-	    game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 		tween:Play()
 		local function NoclipLoop()
         if Clip == false and Plr.Character ~= nil then
+		game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 for _, child in pairs(Plr.Character:GetDescendants()) do
     if child:IsA("BasePart") and child.CanCollide == true then
 	   				child.CanCollide = false
@@ -250,10 +250,10 @@ DroppedSettings:Cheat("Textbox", "Spawned NPC TP", function(Value5)
 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new((tweenspeed), Enum.EasingStyle.Linear)
 
 	    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(game.Workspace.NPC.Spawnables[Value5]:FindFirstChild("HumanoidRootPart").Position)})
-	    game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 		tween:Play()
 		local function NoclipLoop()
         if Clip == false and Plr.Character ~= nil then
+		game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 for _, child in pairs(Plr.Character:GetDescendants()) do
     if child:IsA("BasePart") and child.CanCollide == true then
 	   				child.CanCollide = false
@@ -281,10 +281,10 @@ MobsSettings:Cheat("Textbox", "Mob And Plr TP", function(Value6)
 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new((tweenspeed), Enum.EasingStyle.Linear)
 
 	    tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(game.Workspace.Live[Value6]:FindFirstChild("HumanoidRootPart").Position)})
-		game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 		tween:Play()
 		local function NoclipLoop()
         if Clip == false and Plr.Character ~= nil then
+		game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
 for _, child in pairs(Plr.Character:GetDescendants()) do
     if child:IsA("BasePart") and child.CanCollide == true then
 	   				child.CanCollide = false
@@ -450,6 +450,14 @@ end)
 
 MiscSettings:Cheat("Button", "Purchase Meat $28", function()
 fireclickdetector(game.Workspace["Meat $28"]:FindFirstChild("ClickDetector"))
+end)
+
+MiscSettings:Cheat("Button", "Collect All Flowers", function()
+for _,v in pairs(workspace.Flowers:GetDescendants()) do
+if v:IsA("ClickDetector") then
+fireclickdetector(v)
+end
+end
 end)
 
 ReExecuteSettings:Cheat("Button", "ReExecute The GUI?", function()
