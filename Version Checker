@@ -1,10 +1,10 @@
-if _G.VCheck2 == "v0.39" then
+if _G.VCheck2 == "v0.38" then
 --nothing
 else
 game.StarterGui:SetCore("SendNotification", {
 Title = "Main DSRPG 2 Gui";
 Text = "New Version Of The Gui Detected, Please Re-Execute The Script",
-Icon = "rbxassetid://5472203252";
+Icon = "rbxassetid://6753829839";
 Duration = 8;
 })
 end
