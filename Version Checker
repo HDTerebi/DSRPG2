@@ -1,4 +1,4 @@
-if _G.VCheck2 == "v0.39" then
+if _G.VCheck2 == "v0.40" then
 --nothing
 else
 game.StarterGui:SetCore("SendNotification", {
