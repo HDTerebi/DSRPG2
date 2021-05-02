@@ -4,7 +4,7 @@ else
 game.StarterGui:SetCore("SendNotification", {
 Title = "Main DSRPG 2 Gui";
 Text = "New Version Of The Gui Detected, Please Re-Execute The Script",
-Icon = "rbxassetid://6753829839";
+Icon = "rbxassetid://6753829832";
 Duration = 8;
 })
 end
