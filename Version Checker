@@ -2,8 +2,13 @@ if _G.VCheck2 == "v0.40" then
 --nothing
 else
     local function callback(Text)
-        if Text == "Click Here 2 Re Execute" then
+        if Text == "Re-Execute" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/HDTerebi/DSRPG2/master/DSRPG2%20Main%20Gui"))()
+			elseif Text == "ReJoin" then
+			local tpservice= game:GetService("TeleportService")
+local plr = game.Players.LocalPlayer
+
+tpservice:Teleport(game.PlaceId, plr)
         end
     end
     
@@ -11,10 +16,11 @@ else
     bf.OnInvoke = callback
 game.StarterGui:SetCore("SendNotification", {
 Title = "Main DSRPG 2 Gui";
-Text = "New Version Of The Gui Detected, Please Re-Execute The Script",
+Text = "New Version Of The Gui Detected, Please Re-Execute The Script Or Rejoin",
 Icon = "rbxassetid://6753829832";
 Duration = 8;
-Button1 = "Click Here 2 Re Execute";
+Button1 = "Re-Execute";
+Button2 = "ReJoin";
 Callback = bf
 })
 end
