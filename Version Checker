@@ -1,10 +1,20 @@
 if _G.VCheck2 == "v0.40" then
 --nothing
 else
+    local function callback(Text)
+        if Text == "Click Here 2 Re Execute" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/HDTerebi/DSRPG2/master/DSRPG2%20Main%20Gui"))()
+        end
+    end
+    
+    local bf = Instance.new("BindableFunction")
+    bf.OnInvoke = callback
 game.StarterGui:SetCore("SendNotification", {
 Title = "Main DSRPG 2 Gui";
 Text = "New Version Of The Gui Detected, Please Re-Execute The Script",
 Icon = "rbxassetid://6753829832";
 Duration = 8;
+Button1 = "Click Here 2 Re Execute";
+Callback = bf
 })
 end
