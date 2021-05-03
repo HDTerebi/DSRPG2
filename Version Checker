@@ -1,4 +1,4 @@
-if _G.VCheck2 == "v0.41" then
+if _G.VCheck2 == "v0.42" then
 --nothing
 else
     local function callback(Text)
