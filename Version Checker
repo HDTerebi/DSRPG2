@@ -1,6 +1,7 @@
-if _G.VCheck2 == "v0.43" then
+if game.PlaceId == 4734949248 and _G.VCheck2 == "v0.43" then
 --nothing
 else
+    if game.PlaceId == 4734949248 then
     local function callback(Text)
         if Text == "Re-Execute" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/HDTerebi/DSRPG2/master/DSRPG2%20Main%20Gui"))()
@@ -23,4 +24,5 @@ Button1 = "Re-Execute";
 Button2 = "ReJoin";
 Callback = bf
 })
+end
 end
